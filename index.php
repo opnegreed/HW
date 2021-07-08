@@ -1,39 +1,64 @@
 <meta charset="windows-1251">
 <?php
 // task 1
-$a = 10;
-$b = 2;
-$sum = $a + $b;
-$sub = $a - $b;
-$div = $a / $b;
-$multi = $a * $b;
-echo ("сумма $sum , разность $sub , частное $div, произведение $multi </br>");
-echo "<hr/>";
+function task1()
+{
+    $a = 10;
+    $b = 2;
+    $sum = $a + $b;
+    $sub = $a - $b;
+    $div = $a / $b;
+    $multi = $a * $b;
+    echo("сумма $sum , разность $sub , частное $div, произведение $multi </br>");
+    echo "<hr/>";
+}
+
+task1();
 // task 2
-$x = 2;
-$y = 6;
-$z = 9;
-$sum = ( $x + 1 ) * 4 - 2 * ( $z - $x^2 + $y^2 );
-echo ("результат 2 задания $sum </br>");
-echo "<hr/>";
+function task2()
+{
+    $x = 2;
+    $y = 6;
+    $z = 9;
+    $sum = ($x + 1) * 4 - 2 * ($z - $x ^ 2 + $y ^ 2);
+    echo("результат 2 задания $sum </br>");
+    echo "<hr/>";
+}
+task2();
 //task 3
-$a = 17;
-$b = 10;
-$c = $a - $b;
-$d = 7;
-$result = $c + $d;
-echo("результат 3 задания $result </br>");
-echo "<hr/>";
+function task3()
+{
+    $a = 17;
+    $b = 10;
+    $c = $a - $b;
+    $d = 7;
+    $result = $c + $d;
+    echo("результат 3 задания $result </br>");
+    echo "<hr/>";
+}
+
+task3();
 //task 4
-$text1 = 'привет';
-$text2 = 'мир!';
-echo "$text1 + $text2 </br>";
-echo "<hr/>";
+function task4()
+{
+    $text1 = 'привет';
+    $text2 = 'мир!';
+    echo "$text1 + $text2 </br>";
+    echo "<hr/>";
+}
+
+task4();
 //task 5
-$name = 'Юра';
-echo("Привет, $name </br>");
-echo "<hr/>";
+function task5()
+{
+    $name = 'Юра';
+    echo("Привет, $name </br>");
+    echo "<hr/>";
+}
+
+task5();
 //task 6
+function task6(){
 $num = 12345;
 
 $str = $num ."";
@@ -45,6 +70,9 @@ for($i = 0; $i < strlen($str); $i++)
 }
 echo ("$sum </br>");
 echo "<hr/>";
+}
+
+task6();
 // task 7 не смог.
 /*$secInMin = 60;
 $secInHour = $secInMin * 60;
@@ -63,25 +91,34 @@ echo "$seconds";
 
 
 // task 9
-$var = 1;
-$var += 12;
-$var -= 14;
-$var *= 5;
-$var /= 7;
-$var ++;
-$var --;
-echo "$var </br>";
+function task9()
+{
+    $var = 1;
+    $var += 12;
+    $var -= 14;
+    $var *= 5;
+    $var /= 7;
+    $var++;
+    $var--;
+    echo "$var </br>";
+}
+
+task9();
 
 // task 10
+function task10()  //пропал шрифт, при вынесении первой буквы из имени, не разобрался
+{
+    define('SURNAME', "Боричевский");
+    $name = 'Кот';
+    $grandName = 'Эдуардович';
+    $allButtonName = $name . "";
+    $firstButtonName = $allButtonName[0];
+    echo $firstButtonName;
+    if (SURNAME !== NULL) {
+        $surname = SURNAME;
+        echo("Меня зовут $surname");
 
-define('SURNAME', "Боричевский");
-$name = 'Кот';
-$grandName = 'Эдуардович';
-$allButtonName = $name."";
-$firstButtonName = $allButtonName[0];
-echo $firstButtonName;
-if(SURNAME !== NULL) {
-    $surname = SURNAME;
-    echo ("Меня зовут $surname");
-
+    }
 }
+
+task10();
