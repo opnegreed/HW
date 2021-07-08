@@ -1,3 +1,4 @@
+<meta charset="windows-1251">
 <?php
 // task 1
 $a = 10;
@@ -73,4 +74,14 @@ echo "$var </br>";
 
 // task 10
 
-define('FOO', "Yura");
+define('SURNAME', "Боричевский");
+$name = 'Кот';
+$grandName = 'Эдуардович';
+$allButtonName = $name."";
+$firstButtonName = $allButtonName[0];
+echo $firstButtonName;
+if(SURNAME !== NULL) {
+    $surname = SURNAME;
+    echo ("Меня зовут $surname");
+
+}
